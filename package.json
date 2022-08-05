@@ -7,13 +7,21 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "clear": "rm -rf node_modules dist"
+    "clear": "rm -rf node_modules dist",
+    "commit": "git-cz"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "3.3.0",
     "husky": "^8.0.1",
     "typescript": "^4.6.4",
     "vite": "^3.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
