@@ -1,0 +1,7 @@
+version: 0.1
+cli:
+  version: 0.15.1-beta
+lint:
+  enabled:
+    - markdownlint@0.32.1
+    - prettier@2.7.1
