@@ -13,4 +13,3 @@ lint:
     - linters: [ALL]
       paths:
         - .husky/*
-        - node_modules
