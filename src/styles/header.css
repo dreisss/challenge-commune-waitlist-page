@@ -1,0 +1,13 @@
+header.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+nav.header-navbar ul {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
