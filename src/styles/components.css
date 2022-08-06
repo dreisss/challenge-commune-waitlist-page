@@ -4,7 +4,9 @@
   --text: var(--text);
   --radius: var(--border-radius);
   --p: var(--md);
+  --active-scale: 0.9;
   --transition-hover: background-color var(--middle-speed);
+  --transition-active: transform var(--fast);
 
   display: inline-flex;
   user-select: none;
@@ -14,11 +16,17 @@
   color: var(--text);
   font-weight: var(--weight-lg);
   transition: var(--transition-hover);
+  transition: var(--transition-active);
 }
 
 .btn:hover {
   transition: var(--transition-hover);
   background-color: var(--bg-hover);
+}
+
+.btn:active {
+  transition: var(--transition-active);
+  transform: scale(var(--active-scale));
 }
 
 .btn.btn-ghost {
