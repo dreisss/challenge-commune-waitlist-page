@@ -81,3 +81,24 @@
 .link:active {
   --text: var(--primary-shadow);
 }
+
+.input {
+  --bg: var(--on-primary);
+  --placeholder: var(--gray-2);
+  --radius: var(--sm);
+  --p: var(--md);
+
+  display: inline-flex;
+  width: 100%;
+  background-color: var(--bg);
+  padding: var(--p);
+  border: var(--border);
+  border-radius: var(--radius);
+  font-family: var(--font);
+  font-weight: var(--weight-lg);
+  color: var(--text);
+}
+
+.input::placeholder {
+  color: var(--placeholder);
+}
