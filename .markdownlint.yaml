@@ -1,7 +1,7 @@
 default: true
 blank_lines: true
 bullet: true
-html: true
+html: false
 indentation: true
 line_length: true
 spaces: true
