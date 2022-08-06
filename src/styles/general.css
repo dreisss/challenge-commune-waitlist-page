@@ -23,8 +23,11 @@
   --border: 1px solid #e3e3e3;
   --border-radius: 0.2rem;
 
-  --btn-bg: #cbc0e5;
-  --btn-bg-hover: #b5a4da;
+  --gray-1: #dddfe7;
+  --gray-1-shadow: hsl(228, 17%, 79%);
+
+  --transparent: transparent;
+  --transparent-shadow: #0001;
 
   height: 100vh;
 }
@@ -48,6 +51,11 @@ body {
   font-family: var(--font);
 
   background-color: var(--background);
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-weight: var(--weight-md);
+  margin: 0;
 }
 
 a {
