@@ -11,10 +11,13 @@
   display: inline-flex;
   user-select: none;
   cursor: pointer;
-  padding: var(--p);
+  border: none;
   border-radius: var(--radius);
+  padding: var(--p);
   background-color: var(--bg);
   color: var(--text);
+  font-family: var(--font);
+  font-size: var(--md);
   font-weight: var(--weight-lg);
   transition: var(--transition-hover);
   transition: var(--transition-active);
