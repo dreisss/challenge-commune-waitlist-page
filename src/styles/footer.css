@@ -1,0 +1,20 @@
+footer.footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sm);
+  width: 100%;
+}
+
+footer.footer h4 {
+  font-weight: 700;
+}
+
+footer.footer ul {
+  display: flex;
+  list-style: none;
+  gap: .25rem;
+}
+
+footer.footer .btn {
+  --p: var(--sm);
+}
