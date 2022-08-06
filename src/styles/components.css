@@ -45,6 +45,10 @@
   --text: var(--on-primary);
 }
 
+.btn.btn-circle {
+  --radius: 100%;
+}
+
 .badge {
   --bg: var(--gray-1);
   --text: var(--text);
