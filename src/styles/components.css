@@ -63,14 +63,18 @@
   --text: inherit;
   --decoration: underline;
   --weight: var(--weight-lg);
-  --transition-hover: color var(--fast);
+  --transition: color var(--fast);
 
   color: var(--text);
   text-decoration: var(--decoration);
   font-weight: var(--weight);
-  transition: var(--transition-hover);
+  transition: var(--transition);
 }
 
 .link:hover {
   --text: var(--on-primary);
+}
+
+.link:active {
+  --text: var(--primary-shadow);
 }
