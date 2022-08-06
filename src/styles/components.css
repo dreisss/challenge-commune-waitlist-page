@@ -58,3 +58,13 @@
   --bg: var(--primary);
   --text: var(--gray-1);
 }
+
+.link {
+  --text: inherit;
+  --decoration: underline;
+  --weight: var(--weight-lg);
+
+  color: var(--text);
+  text-decoration: var(--decoration);
+  font-weight: var(--weight);
+}
