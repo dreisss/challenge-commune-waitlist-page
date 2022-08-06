@@ -1,0 +1,23 @@
+.btn {
+  --bg: var(--btn-bg);
+  --text: var(--text);
+  --radius: var(--border-radius);
+  --p: var(--md);
+
+  display: inline-flex;
+  user-select: none;
+  padding: var(--p);
+  border-radius: var(--radius);
+  background-color: var(--bg);
+  color: var(--text);
+  font-weight: var(--weight-lg);
+}
+
+.btn.btn-ghost {
+  --bg: transparent;
+}
+
+.btn.btn-primary {
+  --bg: var(--primary);
+  --text: var(--on-primary);
+}
