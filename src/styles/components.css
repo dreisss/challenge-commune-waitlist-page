@@ -1,8 +1,10 @@
 .btn {
   --bg: var(--btn-bg);
+  --bg-hover: var(--btn-bg-hover);
   --text: var(--text);
   --radius: var(--border-radius);
   --p: var(--md);
+  --transition-hover: background-color var(--middle-speed);
 
   display: inline-flex;
   user-select: none;
@@ -11,13 +13,21 @@
   background-color: var(--bg);
   color: var(--text);
   font-weight: var(--weight-lg);
+  transition: var(--transition-hover);
+}
+
+.btn:hover {
+  transition: var(--transition-hover);
+  background-color: var(--bg-hover);
 }
 
 .btn.btn-ghost {
   --bg: transparent;
+  --bg-hover: #0001;
 }
 
 .btn.btn-primary {
   --bg: var(--primary);
+  --bg-hover: var(--primary-shadow);
   --text: var(--on-primary);
 }

@@ -24,6 +24,7 @@
   --border-radius: 0.2rem;
 
   --btn-bg: #cbc0e5;
+  --btn-bg-hover: #b5a4da;
 
   height: 100vh;
 }
