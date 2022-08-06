@@ -10,6 +10,7 @@
 
   display: inline-flex;
   user-select: none;
+  white-space: nowrap;
   cursor: pointer;
   border: none;
   border-radius: var(--radius);
@@ -51,6 +52,7 @@
   --p: var(--sm) var(--lg);
 
   display: inline-flex;
+  width: max-content;
   padding: var(--p);
   border-radius: var(--radius);
   background-color: var(--bg);
@@ -78,7 +80,8 @@
   --text: var(--on-primary);
 }
 
-.link:active {
+.link:active,
+.link:focus {
   --text: var(--primary-shadow);
 }
 
@@ -89,7 +92,7 @@
   --p: var(--md);
 
   display: inline-flex;
-  width: 100%;
+  flex: 1;
   background-color: var(--bg);
   padding: var(--p);
   border: var(--border);
