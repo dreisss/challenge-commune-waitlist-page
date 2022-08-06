@@ -1,6 +1,6 @@
 .btn {
-  --bg: var(--btn-bg);
-  --bg-hover: var(--btn-bg-hover);
+  --bg: var(--gray-1);
+  --bg-hover: var(--gray-1-shadow);
   --text: var(--text);
   --radius: var(--border-radius);
   --p: var(--md);
@@ -10,6 +10,7 @@
 
   display: inline-flex;
   user-select: none;
+  cursor: pointer;
   padding: var(--p);
   border-radius: var(--radius);
   background-color: var(--bg);
@@ -30,8 +31,8 @@
 }
 
 .btn.btn-ghost {
-  --bg: transparent;
-  --bg-hover: #0001;
+  --bg: var(--transparent);
+  --bg-hover: var(--transparent-shadow);
 }
 
 .btn.btn-primary {
