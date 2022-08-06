@@ -1,13 +1,27 @@
 :root {
+  --sm: 0.5rem;
+  --md: 1rem;
+  --lg: 1.5rem;
+
+  --slow: 200ms ease-in-out;
+  --middle-speed: 150ms ease-in;
+  --fast: 100ms ease-in-out;
+
+  --weight-sm: 400;
+  --weight-md: 500;
+  --weight-lg: 600;
+
   --primary: #372865;
+  --primary-shadow: #281d49;
+  --on-primary: #ffffff;
   --background: #f6f9fe;
+
   --text: #565757;
-  --text-button: #ffffff;
-  --text-badge: #cbc0e5;
   --text-title: #353252;
-  --font: 'Nunito', sans-serif;
-  --icon-badge: #dddfe7;
+  --font: "Nunito", sans-serif;
+
   --border: 1px solid #e3e3e3;
+  --border-radius: 0.2rem;
 
   height: 100vh;
 }
@@ -33,3 +47,7 @@ body {
   background-color: var(--background);
 }
 
+a {
+  text-decoration: none;
+  white-space: nowrap;
+}
