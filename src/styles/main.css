@@ -1,0 +1,36 @@
+main.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  width: 100%;
+}
+
+main.main > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lg);
+}
+
+main.main > div > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md);
+}
+
+.greater-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--text-title);
+}
+
+main.main form {
+  display: flex;
+  gap: var(--md);
+  width: 65%;
+}
+
+.illustration {
+  width: 29%;
+}
