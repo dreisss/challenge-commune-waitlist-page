@@ -40,3 +40,21 @@
   --bg-hover: var(--primary-shadow);
   --text: var(--on-primary);
 }
+
+.badge {
+  --bg: var(--gray-1);
+  --text: var(--text);
+  --radius: var(--lg);
+  --p: var(--sm) var(--lg);
+
+  display: inline-flex;
+  padding: var(--p);
+  border-radius: var(--radius);
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.badge.badge-primary {
+  --bg: var(--primary);
+  --text: var(--gray-1);
+}
