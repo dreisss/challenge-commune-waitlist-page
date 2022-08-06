@@ -15,16 +15,20 @@
   --primary-shadow: #281d49;
   --on-primary: #ffffff;
   --background: #f6f9fe;
+  --error: #f03248;
 
   --text: #565757;
   --text-title: #353252;
   --font: "Nunito", sans-serif;
 
   --border: 1px solid #e3e3e3;
+  --border-invalid: 2px solid var(--error);
   --border-radius: 0.2rem;
 
   --gray-1: #dddfe7;
   --gray-1-shadow: hsl(228, 17%, 79%);
+
+  --gray-2: #b5b6b7;
 
   --transparent: transparent;
   --transparent-shadow: #0001;
