@@ -102,3 +102,8 @@
 .input::placeholder {
   color: var(--placeholder);
 }
+
+.input:invalid {
+  --text: var(--error);
+  --border: var(--border-invalid);
+}
