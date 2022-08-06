@@ -40,6 +40,11 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: 0.15rem solid var(--primary);
+  outline-offset: 0.15rem;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -57,12 +62,11 @@ body {
   background-color: var(--background);
 }
 
-:is(h1, h2, h3, h4, h5, h6) {
+:is(p, h1, h2, h3, h4, h5, h6) {
   font-weight: var(--weight-md);
   margin: 0;
 }
 
 a {
   text-decoration: none;
-  white-space: nowrap;
 }
