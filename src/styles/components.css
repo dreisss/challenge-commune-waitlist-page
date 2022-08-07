@@ -1,27 +1,19 @@
+/* ---> Button component */
 .btn {
+  --p: var(--lg);
   --bg: var(--gray-1);
-  --bg-hover: var(--gray-1-shadow);
-  --text: var(--text);
   --radius: var(--border-radius);
-  --p: var(--md);
-  --active-scale: 0.9;
+
+  --bg-hover: var(--gray-1-shadow);
   --transition-hover: background-color var(--middle-speed);
+  --scale-active: 0.9;
   --transition-active: transform var(--fast);
 
   display: inline-flex;
-  user-select: none;
   white-space: nowrap;
   cursor: pointer;
+  user-select: none;
   border: none;
-  border-radius: var(--radius);
-  padding: var(--p);
-  background-color: var(--bg);
-  color: var(--text);
-  font-family: var(--font);
-  font-size: var(--md);
-  font-weight: var(--weight-lg);
-  transition: var(--transition-hover);
-  transition: var(--transition-active);
 }
 
 .btn:hover {
@@ -31,7 +23,7 @@
 
 .btn:active {
   transition: var(--transition-active);
-  transform: scale(var(--active-scale));
+  transform: scale(var(--scale-active));
 }
 
 .btn.btn-ghost {
@@ -43,24 +35,21 @@
   --bg: var(--primary);
   --bg-hover: var(--primary-shadow);
   --text: var(--on-primary);
+  --weight: var(--weight-lg);
 }
 
 .btn.btn-circle {
   --radius: 100%;
 }
 
+/* ---> Badge component */
 .badge {
+  --p: var(--md) var(--xl);
   --bg: var(--gray-1);
-  --text: var(--text);
-  --radius: var(--lg);
-  --p: var(--sm) var(--lg);
+  --radius: var(--xl);
 
   display: inline-flex;
   width: max-content;
-  padding: var(--p);
-  border-radius: var(--radius);
-  background-color: var(--bg);
-  color: var(--text);
 }
 
 .badge.badge-primary {
@@ -68,15 +57,13 @@
   --text: var(--gray-1);
 }
 
+/* --> Link component */
 .link {
-  --text: inherit;
+  --weight: var(--weight-xl);
   --decoration: underline;
-  --weight: var(--weight-lg);
   --transition: color var(--fast);
 
-  color: var(--text);
   text-decoration: var(--decoration);
-  font-weight: var(--weight);
   transition: var(--transition);
 }
 
@@ -84,33 +71,27 @@
   --text: var(--on-primary);
 }
 
-.link:active,
-.link:focus {
+:is(.link:active, .link:focus) {
   --text: var(--primary-shadow);
 }
 
+/* Input component */
 .input {
+  --p: var(--md) var(--lg);
   --bg: var(--on-primary);
   --placeholder: var(--gray-2);
-  --radius: var(--sm);
-  --p: var(--md);
+  --radius: var(--border-radius);
 
   display: inline-flex;
   flex: 1;
-  background-color: var(--bg);
-  padding: var(--p);
   border: var(--border);
-  border-radius: var(--radius);
-  font-family: var(--font);
-  font-weight: var(--weight-lg);
-  color: var(--text);
 }
 
 .input::placeholder {
   color: var(--placeholder);
 }
 
-.input:invalid {
+.input:invalid:focus {
   --text: var(--error);
   --border: var(--border-invalid);
 }
