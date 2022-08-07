@@ -1,0 +1,34 @@
+main.main {
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(2 * var(--xxl));
+}
+
+main.main > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lg);
+}
+
+main.main > div > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md);
+}
+
+.greater-title {
+  font-size: 3rem;
+  font-weight: var(--weight-xl);
+  line-height: 120%;
+  color: var(--text-title);
+}
+
+main.main form {
+  display: flex;
+  gap: var(--lg);
+  width: 65%;
+}
+
+.illustration {
+  width: 30%;
+}
