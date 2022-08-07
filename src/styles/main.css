@@ -1,9 +1,7 @@
 main.main {
-  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 4rem;
-  width: 100%;
+  gap: calc(2 * var(--xxl));
 }
 
 main.main > div {
@@ -20,17 +18,17 @@ main.main > div > div:nth-child(2) {
 
 .greater-title {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: var(--weight-xl);
   line-height: 120%;
   color: var(--text-title);
 }
 
 main.main form {
   display: flex;
-  gap: var(--md);
+  gap: var(--lg);
   width: 65%;
 }
 
 .illustration {
-  width: 29%;
+  width: 30%;
 }

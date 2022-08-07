@@ -1,18 +1,11 @@
 footer.footer {
-  display: flex;
   flex-direction: column;
-  gap: var(--sm);
-  width: 100%;
+  gap: var(--lg);
+  margin-bottom: var(--xl);
 }
 
 footer.footer h4 {
-  font-weight: 700;
-}
-
-footer.footer ul {
-  display: flex;
-  list-style: none;
-  gap: .25rem;
+  font-weight: var(--weight-xl);
 }
 
 footer.footer .btn {
