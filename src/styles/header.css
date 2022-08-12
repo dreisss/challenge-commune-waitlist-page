@@ -1,8 +1,0 @@
-header.header {
-  align-items: center;
-  justify-content: space-between;
-}
-
-header.header .logo {
-  height: var(--xxl);
-}
