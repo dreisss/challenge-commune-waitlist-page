@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer p {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+footer .companies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .companies img {
+  height: 2rem;
+}
