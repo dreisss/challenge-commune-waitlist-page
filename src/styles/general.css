@@ -1,34 +1,39 @@
 :root {
-  --purple-1: #372865;
-  --purple-2: #281d49;
-  --purple-3: #353252;
-  --white-1: #ffffff;
-  --white-2: #f6f9fe;
-  --gray-1: #e3e3e3;
-  --gray-2: #dddfe7;
-  --gray-3: #c0c4d3;
-  --gray-4: #b5b6b7;
-  --gray-5: #565757;
-  --red-1: #f03248;
-  --transparent: transparent;
-  --transparent-shadow: #0001;
-  --font: "Nunito", sans-serif;
+  --clr-primary: #372865;
+  --clr-primary-transparent: #382966bf;
+  --clr-primary-light: #353252;
+  --clr-primary-dark: #281d49;
+  --clr-text: #565757;
+  --clr-background: #f6f9fe;
+  --clr-error: #f03248;
+  --clr-transparent: transparent;
+  --clr-transparent-shadow: #0001;
+
+  --clr-lighter: #ffffff;
+  --clr-light: #dddfe7;
+  --clr-dark: #c0c4d3;
+  --clr-darker: #b5b6b7;
+
   --fw-light: 400;
   --fw-normal: 600;
   --fw-bold: 700;
+
+  --font: "Nunito", sans-serif;
+
   height: 100vh;
-  font-weight: 400;
-  color: var(--gray-5);
+  font-weight: var(--fw-light);
+  color: var(--clr-text);
 }
 
 * {
-  font: 16px var(--font);
+  font-size: 16px;
+  font-family: var(--font);
   box-sizing: border-box;
 }
 
 *:focus-visible {
-  outline: 2px solid var(--purple-1);
-  outline-offset: 2px;
+  outline: 2px solid var(--clr-primary-transparent);
+  outline-offset: 1px;
 }
 
 body {
@@ -36,7 +41,7 @@ body {
   place-items: center;
   min-height: 100%;
   margin: 0;
-  background-color: var(--white-2);
+  background-color: var(--clr-background);
 }
 
 .container {
@@ -45,9 +50,8 @@ body {
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  max-height: 1024px;
-  max-width: 1280px;
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
+  gap: 2rem;
 }
 
 ul {
@@ -56,20 +60,14 @@ ul {
   list-style: none;
 }
 
-a {
+:is(a, p, h1, h2, h3, h4, h5, h6) {
+  margin: 0;
+  font-size: 1rem;
   color: inherit;
   text-decoration: none;
 }
 
-:is(p, h1, h2, h3, h4, h5, h6) {
-  margin: 0;
-}
-
-:is(main, footer) {
-  font-size: 14px;
-}
-
 ::selection {
-  background-color: var(--purple-1);
-  color: var(--white-1);
+  background-color: var(--clr-primary-transparent);
+  color: var(--clr-lighter);
 }

@@ -1,22 +1,17 @@
 @media screen and (min-width: 640px) {
-  .container {
-    padding: 4rem 3rem;
-  }
-
-  :is(:root, main, footer) {
+  :root {
     font-size: 24px;
   }
 
-  .badge {
-    align-self: center;
+  .container {
+    padding: 3rem 2.5rem;
+  }
+
+  form {
+    flex-wrap: nowrap;
+  }
+
+  form .btn {
     width: max-content;
-  }
-
-  .great-title {
-    font-size: 2.5rem;
-  }
-
-  footer .companies img {
-    font-size: 1em;
   }
 }

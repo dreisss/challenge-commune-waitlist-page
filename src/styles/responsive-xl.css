@@ -1,14 +1,16 @@
 @media screen and (min-width: 1280px) {
-  .container {
-    padding: 4rem 6rem;
-  }
-
-  :is(:root, main, footer) {
+  :root {
     font-size: 16px;
   }
 
+  .container {
+    padding: 4rem 6rem;
+    max-height: 1024px;
+    max-width: 1280px;
+  }
+
   .great-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   main > div {
@@ -16,19 +18,17 @@
     align-items: baseline;
   }
 
-  .badge {
-    align-self: baseline;
+  form {
+    width: 58%;
   }
 
   .illustration {
     display: block;
   }
+}
 
-  form {
-    flex-wrap: nowrap;
-  }
-
-  form .input {
-    width: max-content;
+@media screen and (min-width: 1536px) {
+  .illustration {
+    max-height: 45%;
   }
 }

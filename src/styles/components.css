@@ -12,7 +12,7 @@
   top: 120%;
   right: 0rem;
   border-radius: 0.4rem;
-  background-color: var(--gray-1);
+  background-color: var(--clr-light);
 }
 
 .dropdown .dropdown-check {
@@ -39,17 +39,19 @@
 }
 
 .btn {
-  --bg: var(--transparent);
-  --bg-hover: var(--transparent-shadow);
+  --bg: var(--clr-transparent);
+  --bg-hover: var(--clr-transparent-shadow);
   --color: inherit;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.75rem;
+  padding: 0.75rem 1rem;
   border: none;
   border-radius: 0.4rem;
   cursor: pointer;
   user-select: none;
+  white-space: nowrap;
   background-color: var(--bg);
   color: var(--color);
   font-weight: var(--fw-normal);
@@ -62,9 +64,9 @@
 }
 
 .btn.btn-primary {
-  --bg: var(--purple-1);
-  --bg-hover: var(--purple-2);
-  --color: var(--gray-1);
+  --bg: var(--clr-primary);
+  --bg-hover: var(--clr-primary-dark);
+  --color: var(--clr-light);
 }
 
 .btn:hover {
@@ -83,9 +85,8 @@
   justify-content: center;
   padding: 0.4rem 1rem;
   border-radius: 2rem;
-  background-color: var(--purple-1);
-  color: var(--gray-2);
-  font-weight: var(--fw-normal);
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
 }
 
 .link {
@@ -98,6 +99,6 @@
 .input {
   padding: 0.5rem 1rem;
   border-radius: 0.4rem;
-  border: 1px solid var(--gray-1);
+  border: 2px solid var(--clr-light);
   font-size: 1rem;
 }
