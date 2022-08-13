@@ -1,97 +1,103 @@
-/* ---> Button component */
+.dropdown {
+  position: relative;
+}
+
+.dropdown > :is(.dropdown-check, .dropdown-content) {
+  position: absolute;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  padding: 1rem;
+  top: 120%;
+  right: 0rem;
+  border-radius: 0.4rem;
+  background-color: var(--gray-1);
+}
+
+.dropdown .dropdown-check {
+  opacity: 0;
+  z-index: -1;
+}
+
+.dropdown .dropdown-check:checked ~ .dropdown-content {
+  display: flex;
+  animation: show-dropdown-content 0.2s ease-in;
+}
+
+.dropdown .dropdown-check:focus-visible ~ .dropdown-btn {
+  outline: 2px solid var(--purple-1);
+}
+
+@keyframes show-dropdown-content {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .btn {
-  --p: var(--lg);
-  --bg: var(--gray-1);
-  --radius: var(--border-radius);
-
-  --bg-hover: var(--gray-1-shadow);
-  --transition-hover: background-color var(--middle-speed);
-  --scale-active: 0.9;
-  --transition-active: transform var(--fast);
-
-  display: inline-flex;
-  white-space: nowrap;
+  --bg: var(--transparent);
+  --bg-hover: var(--transparent-shadow);
+  --color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.4rem;
   cursor: pointer;
   user-select: none;
-  border: none;
+  background-color: var(--bg);
+  color: var(--color);
+  font-weight: var(--fw-normal);
+  font-size: 1rem;
+}
+
+.btn.btn-circle {
+  border-radius: 100%;
+  padding: 0.3rem;
+}
+
+.btn.btn-primary {
+  --bg: var(--purple-1);
+  --bg-hover: var(--purple-2);
+  --color: var(--gray-1);
 }
 
 .btn:hover {
-  transition: var(--transition-hover);
+  transition: background-color 0.15s ease-in;
   background-color: var(--bg-hover);
 }
 
 .btn:active {
-  transition: var(--transition-active);
-  transform: scale(var(--scale-active));
+  transition: transform 0.1s ease-in;
+  transform: scale(0.9);
 }
 
-.btn.btn-ghost {
-  --bg: var(--transparent);
-  --bg-hover: var(--transparent-shadow);
-}
-
-.btn.btn-primary {
-  --bg: var(--primary);
-  --bg-hover: var(--primary-shadow);
-  --text: var(--on-primary);
-  --weight: var(--weight-lg);
-}
-
-.btn.btn-circle {
-  --radius: 100%;
-}
-
-/* ---> Badge component */
 .badge {
-  --p: var(--md) var(--xl);
-  --bg: var(--gray-1);
-  --radius: var(--xl);
-
-  display: inline-flex;
-  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  background-color: var(--purple-1);
+  color: var(--gray-2);
+  font-weight: var(--fw-normal);
 }
 
-.badge.badge-primary {
-  --bg: var(--primary);
-  --text: var(--gray-1);
-}
-
-/* --> Link component */
 .link {
-  --weight: var(--weight-xl);
-  --decoration: underline;
-  --transition: color var(--fast);
-
-  text-decoration: var(--decoration);
-  transition: var(--transition);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: var(--fw-bold);
 }
 
-.link:hover {
-  --text: var(--on-primary);
-}
-
-:is(.link:active, .link:focus) {
-  --text: var(--primary-shadow);
-}
-
-/* Input component */
 .input {
-  --p: var(--md) var(--lg);
-  --bg: var(--on-primary);
-  --placeholder: var(--gray-2);
-  --radius: var(--border-radius);
-
-  display: inline-flex;
-  flex: 1;
-  border: var(--border);
-}
-
-.input::placeholder {
-  color: var(--placeholder);
-}
-
-.input:invalid:focus {
-  --text: var(--error);
-  --border: var(--border-invalid);
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--gray-1);
+  font-size: 1rem;
 }

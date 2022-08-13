@@ -2,99 +2,119 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Commune</title>
+    <title>Commune Waitlist</title>
   </head>
   <body>
-    <header class="header">
-      <img src="/assets/Logo.svg" alt="" class="logo" />
+    <div class="container">
+      <header>
+        <a class="btn" href="#">
+          <img
+            class="header-logo"
+            src="/assets/Logo.svg"
+            alt="A purple rocket with the text 'Comunne' in the right side"
+          />
+        </a>
 
-      <nav class="header-navbar">
-        <ul>
-          <li><a class="btn btn-ghost" href="#">Features</a></li>
-          <li><a class="btn btn-ghost" href="#">Affiliates</a></li>
-          <li><a class="btn btn-ghost" href="#">Pricing</a></li>
-          <li><a class="btn btn-ghost" href="#">Communities</a></li>
-          <li><a class="btn btn-primary" href="#">Join Waitlist</a></li>
-        </ul>
-      </nav>
-    </header>
+        <nav class="header-menu">
+          <div class="dropdown" tabindex="-1">
+            <input
+              type="checkbox"
+              class="dropdown-check"
+              id="header-dropdown-check"
+            />
+            <label class="dropdown-btn btn" for="header-dropdown-check">
+              <img
+                class="menu-btn"
+                src="/assets/Hamburger Menu.svg"
+                alt="Three horizontal bars representing the menu button."
+              />
+            </label>
+            <div class="dropdown-content">
+              <ul>
+                <li><a class="btn" href="#">Features</a></li>
+                <li><a class="btn" href="#">Affiliates</a></li>
+                <li><a class="btn" href="#">Pricing</a></li>
+                <li><a class="btn" href="#">Communities</a></li>
+                <li><a class="btn" href="#">Join Waitlist</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-    <main class="main">
-      <div>
-        <div class="badge badge-primary">
-          <h4>
-            We are now allowing early-access for users.
-            <a class="link" href="#">Learn more.</a>
-          </h4>
-        </div>
-
+      <main>
         <div>
-          <h1 class="greater-title">
+          <div class="badge">
+            <p>
+              We are now allowing early-access for users.
+              <a class="link">Learn More</a>
+            </p>
+          </div>
+
+          <h1 class="great-title">
             Build a highly engaged community with no effort.
           </h1>
+
           <p>
             Commune offers the tools you need to build a highly engaged
             community with little to no effort. Simply setup your Commune
             workspace, and manage everything from members to content from one
             central dashboard.
           </p>
+
           <form>
-            <input
-              class="input"
-              type="email"
-              placeholder="Enter your e-mail address"
-              required
-            />
+            <input class="input" placeholder="Enter your e-mail address" />
             <button class="btn btn-primary">Join Waitlist</button>
           </form>
         </div>
-      </div>
 
-      <img class="illustration" src="/assets/Illustration.png" />
-    </main>
+        <img src="/assets/Illustration.png" class="illustration" alt="" />
+      </main>
 
-    <footer class="footer">
-      <h4>Used by these companies:</h4>
+      <footer>
+        <p>Used by these companies:</p>
 
-      <ul>
-        <li>
-          <a href="#" class="btn btn-ghost btn-circle">
-            <img src="/assets/Atlassian Icon.svg" />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="btn btn-ghost btn-circle">
-            <img src="/assets/Behance Icon.svg" />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="btn btn-ghost btn-circle">
-            <img src="/assets/Bing Icon.svg" />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="btn btn-ghost btn-circle">
-            <img src="/assets/Bitbucket Icon.svg" />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="btn btn-ghost btn-circle">
-            <img src="/assets/Dropbox Icon.svg" />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="btn btn-ghost btn-circle">
-            <img src="/assets/Twitch Icon.svg" />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="btn btn-ghost btn-circle">
-            <img src="/assets/Twitter Icon.svg" />
-          </a>
-        </li>
-      </ul>
-    </footer>
+        <ul class="companies">
+          <li>
+            <a class="btn btn-circle">
+              <img src="/assets/Atlassian Icon.svg" alt="Atlassian Logo" />
+            </a>
+          </li>
+          <li>
+            <a class="btn btn-circle">
+              <img src="/assets/Behance Icon.svg" alt="Behance Logo" />
+            </a>
+          </li>
+          <li>
+            <a class="btn btn-circle">
+              <img src="/assets/Bing Icon.svg" alt="Bing Logo" />
+            </a>
+          </li>
+          <li>
+            <a class="btn btn-circle">
+              <img src="/assets/Bitbucket Icon.svg" alt="Bitbucket Logo" />
+            </a>
+          </li>
+          <li>
+            <a class="btn btn-circle">
+              <img src="/assets/Dropbox Icon.svg" alt="Dropbox Logo" />
+            </a>
+          </li>
+          <li>
+            <a class="btn btn-circle">
+              <img src="/assets/Twitch Icon.svg" alt="Twitch Logo" />
+            </a>
+          </li>
+          <li>
+            <a class="btn btn-circle">
+              <img src="/assets/Twitter Icon.svg" alt="Twitter Logo" />
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
 
     <script type="module" src="/ts/main.ts"></script>
   </body>

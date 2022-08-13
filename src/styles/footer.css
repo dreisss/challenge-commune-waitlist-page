@@ -1,13 +1,19 @@
-footer.footer {
+footer {
+  display: flex;
   flex-direction: column;
-  gap: var(--lg);
-  margin-bottom: var(--xl);
+  gap: 0.5rem;
 }
 
-footer.footer h4 {
-  font-weight: var(--weight-xl);
+footer p {
+  font-weight: 700;
+  font-size: 1em;
 }
 
-footer.footer .btn {
-  --p: var(--sm);
+footer .companies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .companies img {
+  height: 3rem;
 }
