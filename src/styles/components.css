@@ -1,39 +1,32 @@
 .dropdown {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
 }
 
-.dropdown .dropdown-btn {
-  display: flex;
+.dropdown > :is(.dropdown-check, .dropdown-content) {
+  position: absolute;
 }
 
 .dropdown .dropdown-content {
   display: none;
+  padding: 1rem;
+  top: 120%;
+  right: 0rem;
+  border-radius: 0.4rem;
+  background-color: var(--gray-1);
 }
 
-.dropdown-check {
-  position: absolute;
-  width: 1rem;
-  height: 1rem;
+.dropdown .dropdown-check {
   opacity: 0;
   z-index: -1;
 }
 
-.dropdown-check:focus-visible + .dropdown-btn {
-  outline: 2px solid var(--purple-1);
-}
-
 .dropdown .dropdown-check:checked ~ .dropdown-content {
   display: flex;
-  position: absolute;
-  padding: 0.5rem;
-  top: 3rem;
-  right: 0rem;
-  border-radius: 0.5rem;
-  background-color: var(--gray-1);
   animation: show-dropdown-content 0.2s ease-in;
+}
+
+.dropdown .dropdown-check:focus-visible ~ .dropdown-btn {
+  outline: 2px solid var(--purple-1);
 }
 
 @keyframes show-dropdown-content {
@@ -46,21 +39,37 @@
 }
 
 .btn {
+  --bg: var(--transparent);
+  --bg-hover: var(--transparent-shadow);
+  --color: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0.75rem;
+  border: none;
   border-radius: 0.4rem;
-  font-weight: 600;
   cursor: pointer;
   user-select: none;
-  border: none;
-  background-color: var(--transparent);
+  background-color: var(--bg);
+  color: var(--color);
+  font-weight: var(--fw-normal);
+  font-size: 1rem;
+}
+
+.btn.btn-circle {
+  border-radius: 100%;
+  padding: 0.3rem;
+}
+
+.btn.btn-primary {
+  --bg: var(--purple-1);
+  --bg-hover: var(--purple-2);
+  --color: var(--gray-1);
 }
 
 .btn:hover {
   transition: background-color 0.15s ease-in;
-  background-color: var(--transparent-shadow);
+  background-color: var(--bg-hover);
 }
 
 .btn:active {
@@ -68,44 +77,27 @@
   transform: scale(0.9);
 }
 
-.btn-primary {
-  background-color: var(--purple-1);
-  color: var(--white-1);
-}
-
-.btn-primary:hover {
-  transition: background-color 0.15s ease-in;
-  background-color: var(--purple-2);
-}
-
-.btn-primary:active {
-  transition: transform 0.1s ease-in;
-  transform: scale(0.9);
-}
-
-.btn-circle {
-  border-radius: 100%;
-  padding: 0.25rem;
-}
-
 .badge {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.4rem 1.5rem;
+  padding: 0.4rem;
   border-radius: 2rem;
   background-color: var(--purple-1);
   color: var(--gray-2);
+  font-weight: var(--fw-normal);
 }
 
 .link {
   cursor: pointer;
   text-decoration: underline;
-  font-weight: 700;
+  text-underline-offset: 2px;
+  font-weight: var(--fw-bold);
 }
 
 .input {
   padding: 0.5rem 1rem;
   border-radius: 0.4rem;
   border: 1px solid var(--gray-1);
+  font-size: 1rem;
 }
