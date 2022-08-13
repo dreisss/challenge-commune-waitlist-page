@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  height: 1.5rem;
+}
+
+.menu-btn {
+  height: 1rem;
+}
+
+.header-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
