@@ -9,3 +9,5 @@ import "../styles/main.css";
 import "../styles/footer.css";
 import "../styles/responsive-sm.css";
 import "../styles/responsive-xl.css";
+
+import "./loading.ts";
