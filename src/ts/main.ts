@@ -7,4 +7,5 @@ import "../styles/components.css";
 import "../styles/header.css";
 import "../styles/main.css";
 import "../styles/footer.css";
-import "../styles/responsive-md.css";
+import "../styles/responsive-sm.css";
+import "../styles/responsive-xl.css";

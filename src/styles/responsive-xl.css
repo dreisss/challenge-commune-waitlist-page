@@ -1,0 +1,34 @@
+@media screen and (min-width: 1280px) {
+  body {
+    padding: 4rem 6rem;
+  }
+
+  :is(:root, main, footer) {
+    font-size: 16px;
+  }
+
+  .great-title {
+    font-size: 3.5rem;
+  }
+
+  main > div {
+    text-align: left;
+    align-items: baseline;
+  }
+
+  .badge {
+    align-self: baseline;
+  }
+
+  .illustration {
+    display: block;
+  }
+
+  form {
+    flex-wrap: nowrap;
+  }
+
+  form .input {
+    width: max-content;
+  }
+}

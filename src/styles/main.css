@@ -1,12 +1,14 @@
 main {
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  gap: 4rem;
 }
 
-main * {
+main > div {
   font-size: 1em;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .great-title {
@@ -14,7 +16,6 @@ main * {
   font-weight: var(--fw-bold);
   line-height: 120%;
   color: var(--purple-3);
-  text-align: center;
 }
 
 form {
@@ -25,4 +26,9 @@ form {
 
 form > * {
   width: 100%;
+}
+
+.illustration {
+  display: none;
+  max-height: 50vh;
 }
