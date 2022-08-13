@@ -1,8 +1,16 @@
-header.header {
+header {
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header.header .logo {
-  height: var(--xxl);
+.header-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.header-menu .btn {
+  width: 100%;
+  height: auto;
 }

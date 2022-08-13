@@ -1,14 +1,26 @@
 {
   "name": "challenge-commune-waitlist-page",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
+    "postinstall": "husky install",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "clear": "rm -rf node_modules dist",
+    "clean": "rm -rf node_modules dist",
     "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "dependencies": {
+    "@fontsource/nunito": "^4.5.9"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
@@ -16,15 +28,9 @@
     "commitizen": "^4.2.5",
     "cz-conventional-changelog": "3.3.0",
     "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1",
     "typescript": "^4.6.4",
     "vite": "^3.0.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "dependencies": {
-    "@fontsource/nunito": "^4.5.9"
   }
 }
