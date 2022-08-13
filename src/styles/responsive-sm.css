@@ -1,0 +1,22 @@
+@media screen and (min-width: 640px) {
+  body {
+    padding: 4rem 3rem;
+  }
+
+  :is(:root, main, footer) {
+    font-size: 24px;
+  }
+
+  .badge {
+    align-self: center;
+    width: max-content;
+  }
+
+  .great-title {
+    font-size: 2.5rem;
+  }
+
+  footer .companies img {
+    font-size: 1em;
+  }
+}

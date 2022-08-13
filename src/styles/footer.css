@@ -6,7 +6,7 @@ footer {
 
 footer p {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 footer .companies {
@@ -15,5 +15,5 @@ footer .companies {
 }
 
 footer .companies img {
-  height: 2.5rem;
+  height: 3rem;
 }
