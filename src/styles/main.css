@@ -30,5 +30,7 @@ form > :is(.input, .btn) {
 
 .illustration {
   display: none;
+  width: auto;
+  height: auto;
   max-height: 50vh;
 }
