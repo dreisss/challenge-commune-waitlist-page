@@ -1,0 +1,28 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 14px;
+}
+
+main * {
+  font-size: 1em;
+  text-align: center;
+}
+
+.great-title {
+  font-size: 1.75em;
+  font-weight: 700;
+  color: var(--purple-3);
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+form > * {
+  width: 100%;
+}

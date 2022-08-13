@@ -50,10 +50,12 @@
   align-items: center;
   justify-content: center;
   padding: 0.75rem;
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
   font-weight: 600;
   cursor: pointer;
   user-select: none;
+  border: none;
+  background-color: var(--transparent);
 }
 
 .btn:hover {
@@ -64,4 +66,41 @@
 .btn:active {
   transition: transform 0.1s ease-in;
   transform: scale(0.9);
+}
+
+.btn-primary {
+  background-color: var(--purple-1);
+  color: var(--white-1);
+}
+
+.btn-primary:hover {
+  transition: background-color 0.15s ease-in;
+  background-color: var(--purple-2);
+}
+
+.btn-primary:active {
+  transition: transform 0.1s ease-in;
+  transform: scale(0.9);
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 1.5rem;
+  border-radius: 2rem;
+  background-color: var(--purple-1);
+  color: var(--gray-2);
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.input {
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--gray-1);
 }
