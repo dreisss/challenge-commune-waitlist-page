@@ -1,66 +1,25 @@
-.dropdown {
-  position: relative;
-}
-
-.dropdown > :is(.dropdown-check, .dropdown-content) {
-  position: absolute;
-}
-
-.dropdown .dropdown-content {
-  display: none;
-  padding: 1rem;
-  top: 120%;
-  right: 0rem;
-  border-radius: 0.4rem;
-  background-color: var(--clr-light);
-}
-
-.dropdown .dropdown-check {
-  opacity: 0;
-  z-index: -1;
-}
-
-.dropdown .dropdown-check:checked ~ .dropdown-content {
-  display: flex;
-  animation: show-dropdown-content 0.2s ease-in;
-}
-
-.dropdown .dropdown-check:focus-visible ~ .dropdown-btn {
-  outline: 2px solid var(--purple-1);
-}
-
-@keyframes show-dropdown-content {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .btn {
   --bg: var(--clr-transparent);
   --bg-hover: var(--clr-transparent-shadow);
   --color: inherit;
 
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 0.75rem 1rem;
+  padding: 1rem;
   border: none;
   border-radius: 0.4rem;
   cursor: pointer;
   user-select: none;
   white-space: nowrap;
-  background-color: var(--bg);
   color: var(--color);
   font-weight: var(--fw-normal);
   font-size: 1rem;
+  background-color: var(--bg);
 }
 
 .btn.btn-circle {
-  border-radius: 100%;
   padding: 0.3rem;
+  border-radius: 100%;
 }
 
 .btn.btn-primary {
@@ -70,23 +29,21 @@
 }
 
 .btn:hover {
-  transition: background-color 0.15s ease-in;
+  transition: background-color 0.25s ease-in;
   background-color: var(--bg-hover);
 }
 
 .btn:active {
-  transition: transform 0.1s ease-in;
-  transform: scale(0.9);
+  animation: btn-pop 2s ease;
 }
 
 .badge {
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: 0.4rem 1rem;
   border-radius: 2rem;
-  background-color: var(--clr-primary);
   color: var(--clr-light);
+  background-color: var(--clr-primary);
 }
 
 .link {
@@ -96,9 +53,21 @@
   font-weight: var(--fw-bold);
 }
 
+.link:focus {
+  border-radius: 0.25rem;
+  outline-offset: 1rem;
+  outline-style: dashed;
+}
+
 .input {
-  padding: 0.5rem 1rem;
+  padding: calc(1rem - 2px) 1.5rem;
   border-radius: 0.4rem;
   border: 2px solid var(--clr-light);
+  color: var(--clr-text);
   font-size: 1rem;
+  font-weight: var(--fw-normal);
+}
+
+.input:focus:invalid {
+  border-color: var(--clr-error);
 }
