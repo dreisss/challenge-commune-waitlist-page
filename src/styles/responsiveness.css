@@ -1,0 +1,79 @@
+@media screen and (min-width: 640px) {
+  :root {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 3rem;
+    gap: 0;
+  }
+
+  form {
+    flex-wrap: nowrap;
+  }
+
+  form .btn {
+    width: max-content;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  :root {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 4rem 6rem;
+  }
+
+  :is(.dropdown-menu-btn, .dropdown-menu-check) {
+    display: none;
+  }
+
+  .dropdown-menu-content {
+    padding: 0;
+    position: inherit;
+    opacity: 1 !important;
+    z-index: 1 !important;
+    background-color: transparent;
+  }
+
+  .dropdown-menu-content ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .dropdown-menu-content ul li:last-child .btn {
+    --bg: var(--clr-primary);
+    --bg-hover: var(--clr-primary-dark);
+    --color: var(--clr-lighter);
+  }
+
+  main > div {
+    text-align: left;
+    align-items: baseline;
+  }
+
+  main > div > h1 {
+    font-size: 3rem;
+  }
+
+  form {
+    width: 58%;
+  }
+
+  .illustration {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .container {
+    height: min-content;
+    max-width: 1280px;
+  }
+
+  .illustration {
+    height: 30%;
+  }
+}

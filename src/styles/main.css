@@ -1,7 +1,6 @@
 main {
   display: flex;
   align-items: center;
-  gap: 4rem;
 }
 
 main > div {
@@ -11,11 +10,11 @@ main > div {
   text-align: center;
 }
 
-.great-title {
+main > div > h1 {
   font-size: 2.5rem;
   font-weight: var(--fw-bold);
-  line-height: 120%;
   color: var(--clr-primary-dark);
+  line-height: 120%;
 }
 
 form {
@@ -30,7 +29,5 @@ form > :is(.input, .btn) {
 
 .illustration {
   display: none;
-  width: auto;
-  height: auto;
   max-height: 50vh;
 }
