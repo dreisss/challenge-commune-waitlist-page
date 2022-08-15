@@ -14,3 +14,29 @@ header {
   width: 100%;
   height: auto;
 }
+
+@media screen and (min-width: 1024px) {
+  :is(.dropdown-btn, .dropdown-check) {
+    display: none;
+  }
+
+  .dropdown .dropdown-content {
+    display: flex;
+    background-color: transparent;
+    position: inherit;
+    padding: 0;
+  }
+
+  .header-menu ul {
+    flex-direction: row;
+  }
+
+  .header-menu ul li:last-child a {
+    background-color: var(--clr-primary);
+    color: var(--clr-lighter);
+  }
+
+  .header-menu ul li:last-child a:hover {
+    background-color: var(--clr-primary-dark);
+  }
+}
