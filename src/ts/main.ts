@@ -1,4 +1,3 @@
-import "./fonts.ts";
-import "./styles.ts";
+import "./styling";
 
-import "./loader.ts";
+import "./events";
