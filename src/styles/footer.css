@@ -4,16 +4,7 @@ footer {
   gap: 0.5rem;
 }
 
-footer p {
-  font-weight: var(--fw-bold);
-}
-
 footer .companies {
   display: flex;
   flex-wrap: wrap;
-}
-
-footer .companies img {
-  width: 2.5rem;
-  height: auto;
 }
