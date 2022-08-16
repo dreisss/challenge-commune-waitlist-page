@@ -3,9 +3,9 @@
 [**link**]: https://dreisss.github.io/challenge-commune-waitlist-page/
 [***`vite`***]: https://vitejs.dev
 [<img height="24px" align="center" src="https://vitejs.dev/logo-with-shadow.png"/>]: https://vitejs.dev
-[**`html`**]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[***`html`***]: https://developer.mozilla.org/en-US/docs/Web/HTML
 [<img height="24px" align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>]: https://developer.mozilla.org/en-US/docs/Web/HTML
-[**`css`**]: https://developer.mozilla.org/en-US/docs/Web/CSS
+[***`css`***]: https://developer.mozilla.org/en-US/docs/Web/CSS
 [<img height="24px" align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>]: https://developer.mozilla.org/en-US/docs/Web/CSS
 [***`typescript`***]: https://www.typescriptlang.org
 [<img height="22px" align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/>]: https://www.typescriptlang.org
@@ -37,10 +37,10 @@ the simplest stack possible. See below:
 - [***`Vite`***] [<img height="24px" align="center" src="https://vitejs.dev/logo-with-shadow.png"/>]
   | Used to manage a basic development setup
 
-- [**`HTML`**] **&** [**`CSS`**]
+- [***`HTML`***] **&** [***`CSS`***]
   [<img height="24px" align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>]
   [<img height="24px" align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>]
-  | As the simplest web application possible, it uses pure HTML and CSS
+  | Like any simple web application, it uses just pure HTML and CSS
 
 - [***`Typescript`***] [<img height="22px" align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/>]
   | Used to manage events and handle assets (with vite support)
